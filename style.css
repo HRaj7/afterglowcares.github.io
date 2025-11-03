@@ -21,17 +21,14 @@ body {
    Header
 ============================== */
 header {
+  background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: rgba(255, 230, 240, 0.9);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 2px solid #ffc0d1;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 header .logo {
   display: flex;
@@ -68,10 +65,16 @@ header nav {
 }
 
 header nav a {
+  color: #fff; /* white links like index.html */
   text-decoration: none;
-  color: #ff7f9f;
   font-weight: 600;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #333; /* slightly darker on hover/active */
+  transform: translateY(-2px);
 }
 
 header nav a:hover,
