@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Afterglow — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Afterglow logo" class="logo">
+        <a class="brand-text" href="index.html">Afterglow</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="white-section container fade-up">
+      <h1>Contact</h1>
+      <p class="lead">Questions? Volunteer interest? Donations? Send us a message and we'll get back to you.</p>
+
+      <form class="contact-form" action="#" method="POST" onsubmit="alert('Form submission is a demo — connect this to your email service.'); return false;">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <div>
+          <button class="btn" type="submit">Send message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div><strong>Afterglow</strong><p>Student-run • Community-first</p></div>
+      <div class="social"><a href="#" class="tiny-link">@afterglowclub</a></div>
+    </div>
+    <div class="copyright">© 2025 Afterglow Club</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
