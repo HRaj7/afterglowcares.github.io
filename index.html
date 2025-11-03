@@ -1,82 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afterglow Club</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Afterglow — Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="nav-content">
-      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Afterglow Bear Logo" class="logo">
-      <h1>Afterglow</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#get-involved">Get Involved</a>
-        <a href="#contact">Contact</a>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Afterglow logo" class="logo">
+        <a class="brand-text" href="index.html">Afterglow</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <h2>Spreading warmth to postpartum mothers</h2>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about section">
-    <h2>About Us</h2>
-    <p>
-      Afterglow is a student-led club dedicated to supporting postpartum mothers 
-      through care packages, awareness campaigns, and community outreach. 
-      We believe in spreading warmth, comfort, and connection to those who need it most.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects section">
-    <h2>Our Projects</h2>
-    <div class="project-cards">
-      <div class="card">
-        <h3>Warmth Kits</h3>
-        <p>We assemble care packages with essentials for new mothers.</p>
+    <div class="container hero-inner">
+      <div class="hero-copy fade-up">
+        <h1>Spreading warmth to postpartum mothers</h1>
+        <p class="lead">Student-run care, compassion, and community for new moms — care packages, awareness, and support events.</p>
+        <div class="hero-cta">
+          <a class="btn" href="get-involved.html">Get Involved</a>
+          <a class="btn ghost" href="projects.html">Our Projects</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Awareness Events</h3>
-        <p>Hosting info sessions to educate about postpartum wellness.</p>
-      </div>
-      <div class="card">
-        <h3>Community Outreach</h3>
-        <p>Partnering with local hospitals to offer support programs.</p>
+      <div class="hero-image fade-up delay-1">
+        <!-- placeholder hero photo — replace with your own -->
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c6f12c1fd01387b6f6d4769d9f7f0b3"
+             alt="Cozy hands holding blanket">
       </div>
     </div>
   </section>
 
-  <!-- Get Involved -->
-  <section id="get-involved" class="section get-involved">
-    <h2>Get Involved</h2>
-    <p>Join our mission! Volunteer, donate, or simply help spread the word.</p>
-    <a href="#" class="btn">Join the Club</a>
+  <!-- FEATURES / MISSION -->
+  <section class="white-section">
+    <div class="container small-grid fade-up">
+      <div class="card soft">
+        <h3>Our Mission</h3>
+        <p>Afterglow supports postpartum mothers with practical care and emotional connection through student-led service, education, and partnerships with local clinics.</p>
+      </div>
+      <div class="card soft">
+        <h3>What We Do</h3>
+        <p>Warmth Kits, awareness events, volunteer visits, and community outreach — designed to help mothers feel supported and seen.</p>
+      </div>
+      <div class="card soft">
+        <h3>Get Involved</h3>
+        <p>Join events, help assemble kits, or donate supplies. Students, families, and community partners are welcome.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <h2>Contact / Follow Us</h2>
-    <p>Follow us on Instagram @afterglowclub</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4"></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
+  <!-- QUICK PROJECTS PREVIEW -->
+  <section class="accent-section fade-up">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a1be7f2d8a5b0ea5e5e9b1240b8b0a3" alt="">
+          <h4>Warmth Kits</h4>
+          <p>Care packages with essentials for new moms.</p>
+          <a class="link" href="projects.html">Learn more →</a>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7b1a7b6e4d6a1b0b3b9c3d6da4cd32ee" alt="">
+          <h4>Awareness Events</h4>
+          <p>Workshops on postpartum wellness and resources.</p>
+          <a class="link" href="projects.html">Learn more →</a>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3df3f7b4a7d9e14c2b9b6b9f3a0e6c4d" alt="">
+          <h4>Hospital Partnerships</h4>
+          <p>Collaborations to reach mothers in need.</p>
+          <a class="link" href="projects.html">Learn more →</a>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Afterglow Club — All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>Afterglow</strong>
+        <p>Student-run • Community-first • Postpartum support</p>
+      </div>
+      <div class="social">
+        <a href="#" class="tiny-link">@afterglowclub (Instagram)</a>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Afterglow Club — All rights reserved.
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
