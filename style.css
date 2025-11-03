@@ -1,47 +1,73 @@
+/* Fonts & body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #fff0f6; /* pastel pink background */
+    background: linear-gradient(135deg, #ffe6f0, #ffd1dc); /* pastel pink gradient */
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #ffccd9; /* soft pink */
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 204, 217, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ffb3c6;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
 }
 
 header h1 {
-    color: #ff4d6d; /* darker pink for contrast */
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #ff4d6d;
+    margin: 0;
 }
 
 header nav a {
-    color: #ff4d6d;
-    margin: 0 15px;
+    margin-left: 25px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    color: #ff4d6d;
+    font-size: 1em;
 }
 
 header nav a:hover {
+    color: #ff1a40;
     text-decoration: underline;
 }
 
+/* Sections */
 section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: #ffe6f0; /* slightly lighter pink for sections */
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 230, 240, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 h2 {
+    font-family: 'Pacifico', cursive;
     color: #ff4d6d;
+    margin-bottom: 20px;
 }
 
+/* Forms */
 form {
     display: flex;
     flex-direction: column;
@@ -49,9 +75,9 @@ form {
 
 form input, form textarea, form button {
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 12px;
     font-size: 1em;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ffb3c6;
 }
 
@@ -60,35 +86,38 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 form button:hover {
-    opacity: 0.9;
+    background-color: #ff1a40;
 }
 
+/* Lists */
 ul {
     list-style-type: square;
+    padding-left: 20px;
 }
 
-footer {
-    background-color: #ffccd9;
-    color: #ff4d6d;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
+/* Social Icons */
 .social-icons {
-    margin-top: 10px;
-    font-size: 1.5em;
+    margin-top: 20px;
+    font-size: 2em;
 }
 
 .social-icons a {
     color: #ff4d6d;
-    margin: 0 10px;
-    text-decoration: none;
+    margin-right: 15px;
 }
 
 .social-icons a:hover {
     color: #ff1a40;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ff4d6d;
+    font-weight: 600;
 }
