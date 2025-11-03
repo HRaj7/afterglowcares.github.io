@@ -1,112 +1,126 @@
+/* === GENERAL PAGE STYLES === */
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #ffeef5;
-  color: #444;
-  scroll-behavior: smooth;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
+/* === HEADER === */
 header {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.logo-area {
+/* Logo + Title aligned side by side */
+.logo-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo-area img {
+.logo-container img {
   width: 50px;
   height: 50px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo-container h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #333333;
 }
 
-.nav-links {
+/* === NAVIGATION === */
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+nav a {
   text-decoration: none;
-  color: #444;
-  transition: 0.3s;
+  color: #333333;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
 }
 
-.nav-links a:hover {
+nav a:hover {
   color: #ff6699;
+  transform: scale(1.05);
 }
 
-.hero {
+/* === MAIN CONTENT === */
+main {
+  padding: 60px 20px;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(180deg, #ffeef5, #fff);
 }
 
-.hero-logo {
-  width: 120px;
-  animation: fadeIn 2s ease;
-}
-
-.btn {
-  background-color: #ff8fb1;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff6699;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  margin-top: 50px;
-}
-
-.resource-cards {
+/* === ABOUT PAGE TEAM GRID === */
+.team-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.card {
-  background-color: #fff;
+.team-member {
+  background-color: #fff0f6;
   border-radius: 12px;
   padding: 20px;
   width: 250px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
-.card:hover {
+.team-member:hover {
   transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #ffe6ef;
+  color: #333;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ff6699;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
