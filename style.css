@@ -1,262 +1,122 @@
-/* =========================
-   General Reset
-========================= */
-* {
+/* General styles */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* =========================
-   Body & Font
-========================= */
-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
   color: #333;
-  background-color: #fff;
-  line-height: 1.6;
 }
 
-/* =========================
-   Header
-========================= */
+/* Header styles */
 header {
-  background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 12px 40px;
-  height: 80px; /* consistent height across pages */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #0d0d0d;
+  color: white;
+  padding: 10px 40px;
+  height: 80px;
 }
 
-/* =========================
-   Logo
-========================= */
-.logo a {
+header .logo-container {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  gap: 12px;
 }
 
-.logo img {
-  width: 55px;
-  height: 55px;
-  margin-right: 10px;
-  vertical-align: middle;
+header img {
+  height: 50px;
+  width: auto;
 }
 
-.logo h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.8rem;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  white-space: nowrap;
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: white;
 }
 
-/* =========================
-   Navigation
-========================= */
-nav {
+/* Navigation styles */
+nav ul {
+  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  margin: 0 15px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #333;
-}
-
-nav a.active {
-  color: #333; /* highlight for active page */
-}
-
-/* =========================
-   Section Styling
-========================= */
-section {
-  padding: 60px 10%;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 2rem;
-  color: #ff6f91;
-  margin-bottom: 20px;
-}
-
-/* =========================
-   About Page
-========================= */
-.about-container {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.about-section {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 40px 25px;
-  margin-bottom: 40px;
-}
-
-.about-section h2 {
-  font-family: 'Pacifico', cursive;
-  color: #ff6f91;
-  margin-bottom: 15px;
-}
-
-.about-section p {
-  line-height: 1.7;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-/* =========================
-   Team Section
-========================= */
-.team-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.team-member {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 15px;
-  width: 180px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.team-member h3 {
-  font-size: 1em;
-  color: #ff6f91;
-  margin: 5px 0;
-}
-
-.role {
-  color: #d96c9d;
-  font-size: 0.9em;
-}
-
-/* =========================
-   Contact Form
-========================= */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-input, textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-button {
-  background: #ff6f91;
   color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background: #ff5c7a;
-}
-
-/* =========================
-   Social Icons
-========================= */
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: #ff6f91;
-  font-size: 1.5rem;
-  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-.social-icons a:hover {
-  color: #333;
-}
-
-/* =========================
-   Footer
-========================= */
-footer {
-  background-color: #ffb6c1;
-  color: #fff;
-  padding: 25px 10%;
-  text-align: center;
-}
-
-.footer-links a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   Responsive
-========================= */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    padding: 15px 20px;
-  }
+/* About Us page specific */
+.about-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+.about-section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 30px;
+}
 
-  section {
-    padding: 40px 5%;
-  }
+.about-section p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
 
-  .team-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Team section */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  width: 220px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.team-member h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.team-member p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0d0d0d;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
 }
