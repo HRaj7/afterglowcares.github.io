@@ -1,10 +1,11 @@
-/* Fonts & body */
+/* Body & background */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(135deg, #ffe6f0, #ffd1dc); /* pastel pink gradient */
+    /* Softer pastel pink gradient */
+    background: linear-gradient(135deg, #fff0f5, #ffe6eb); 
     color: #333;
 }
 
