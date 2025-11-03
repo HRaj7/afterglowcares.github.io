@@ -1,112 +1,58 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #ffeef5;
-  color: #444;
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afterglow Cares</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <nav>
+      <div class="logo-area">
+        <img src="logo.png" alt="Afterglow Cares Logo">
+        <h1>Afterglow Cares</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 15px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <img src="logo.png" alt="Bear Logo" class="hero-logo">
+      <h2>Supporting postpartum mothers with care, compassion, and community.</h2>
+      <a href="contact.html" class="btn">Get Involved</a>
+    </div>
+  </section>
 
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  <section class="about fade-in">
+    <h2>Our Mission</h2>
+    <p>Afterglow Cares aims to raise awareness about postpartum health and the deficit in resources for postpartum women. Through care packages, projects, and community events, we strive to give back with empathy and love.</p>
+  </section>
 
-.logo-area img {
-  width: 50px;
-  height: 50px;
-}
+  <section class="projects fade-in">
+    <h2>Current Projects</h2>
+    <ul>
+      <li>💝 Postpartum Care Basket Drive</li>
+      <li>🌷 Community Awareness Week</li>
+      <li>🕊️ Educational Outreach Program</li>
+    </ul>
+  </section>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #444;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ff6699;
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(180deg, #ffeef5, #fff);
-}
-
-.hero-logo {
-  width: 120px;
-  animation: fadeIn 2s ease;
-}
-
-.btn {
-  background-color: #ff8fb1;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff6699;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  margin-top: 50px;
-}
-
-.resource-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
+  <footer>
+    <p>© 2025 Afterglow Cares. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="mailto:afterglowclub@example.com"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+  </footer>
+</body>
+</html>
