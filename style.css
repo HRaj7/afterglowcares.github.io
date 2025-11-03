@@ -29,6 +29,11 @@ header .logo {
 header .logo img {
     height: 50px;
     margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: rotate(-10deg) scale(1.1);
 }
 
 header h1 {
@@ -36,6 +41,11 @@ header h1 {
     font-size: 1.8em;
     color: #ff4d6d;
     margin: 0;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
 }
 
 header nav a {
@@ -44,11 +54,12 @@ header nav a {
     font-weight: 600;
     color: #ff4d6d;
     font-size: 1em;
+    transition: color 0.3s, transform 0.3s;
 }
 
 header nav a:hover {
     color: #ff1a40;
-    text-decoration: underline;
+    transform: translateY(-3px);
 }
 
 /* Sections */
@@ -59,6 +70,12 @@ section {
     background-color: rgba(255, 230, 240, 0.8);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -79,6 +96,12 @@ form input, form textarea, form button {
     font-size: 1em;
     border-radius: 8px;
     border: 1px solid #ffb3c6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form input:hover, form textarea:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(255,77,109,0.3);
 }
 
 form button {
@@ -86,11 +109,13 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s, box-shadow 0.3s;
 }
 
 form button:hover {
     background-color: #ff1a40;
+    box-shadow: 0 6px 15px rgba(255,26,64,0.5);
+    transform: scale(1.05);
 }
 
 /* Lists */
@@ -108,10 +133,12 @@ ul {
 .social-icons a {
     color: #ff4d6d;
     margin-right: 15px;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
     color: #ff1a40;
+    transform: scale(1.3) rotate(-10deg);
 }
 
 /* Footer */
