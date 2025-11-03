@@ -25,10 +25,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 12px 40px;
+  height: 80px; /* consistent height across pages */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* =========================
+   Logo
+========================= */
 .logo a {
   display: flex;
   align-items: center;
@@ -39,6 +43,7 @@ header {
   width: 55px;
   height: 55px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .logo h1 {
@@ -46,6 +51,15 @@ header {
   font-size: 1.8rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -53,12 +67,15 @@ nav a {
   color: #fff;
   font-weight: 600;
   margin: 0 15px;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: #333;
+}
+
+nav a.active {
+  color: #333; /* highlight for active page */
 }
 
 /* =========================
@@ -76,7 +93,7 @@ section h2 {
 }
 
 /* =========================
-   About Page Layout
+   About Page
 ========================= */
 .about-container {
   max-width: 1000px;
@@ -151,21 +168,6 @@ section h2 {
 }
 
 /* =========================
-   Events & Lists
-========================= */
-#events ul {
-  list-style: none;
-  text-align: left;
-}
-
-#events li {
-  background: #ffe4ec;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* =========================
    Contact Form
 ========================= */
 form {
@@ -234,26 +236,27 @@ footer {
 }
 
 /* =========================
-   Responsive Design
+   Responsive
 ========================= */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    height: auto;
     gap: 10px;
+    padding: 15px 20px;
   }
 
   nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-container {
     flex-direction: column;
     align-items: center;
   }
 
   section {
     padding: 40px 5%;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
