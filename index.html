@@ -2,219 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afterglow Cares Club</title>
-  <style>
-    /* ===== GLOBAL STYLES ===== */
-    :root {
-      --blush: #f6c1b3;
-      --peach: #fbd2c4;
-      --coral: #ef786d;
-      --cream: #fff9f6;
-      --gray: #3d3d3d;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Nunito', Arial, sans-serif;
-      background-color: var(--cream);
-      color: var(--gray);
-    }
-
-    header {
-      background: linear-gradient(90deg, var(--peach), var(--blush));
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    nav a:hover {
-      opacity: 0.8;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      color: var(--coral);
-      margin-bottom: 1rem;
-    }
-
-    p {
-      line-height: 1.7;
-    }
-
-    .hero {
-      background: linear-gradient(180deg, var(--peach), var(--cream));
-      padding: 6rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      color: var(--coral);
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 1rem auto 2rem;
-      color: var(--gray);
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      background-color: var(--coral);
-      color: white;
-      border: none;
-      border-radius: 30px;
-      padding: 0.8rem 1.8rem;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(239,120,109,0.4);
-    }
-
-    .projects, .resources, .contact {
-      background-color: #fff;
-      border-radius: 15px;
-      margin: 2rem auto;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 3rem 2rem;
-    }
-
-    .projects img, .resources img {
-      width: 100%;
-      border-radius: 15px;
-      margin-top: 1rem;
-    }
-
-    footer {
-      background-color: var(--blush);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .fade {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    .fade.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 700px) {
-      nav a {
-        margin-left: 0.8rem;
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afterglow Club</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>Afterglow Cares Club</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resources">Resources</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-content">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Afterglow Bear Logo" class="logo">
+      <h1>Afterglow</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" class="hero fade">
-    <h1>Supporting New Mothers, One Care Basket at a Time</h1>
-    <p>Afterglow Cares Club raises awareness about postpartum health and creates care packages to support mothers in our community.</p>
-    <a href="#projects" class="btn">See Our Work</a>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Spreading warmth to postpartum mothers</h2>
   </section>
 
-  <section id="about" class="fade">
+  <!-- About -->
+  <section id="about" class="about section">
     <h2>About Us</h2>
-    <p>We are a student-led club dedicated to supporting postpartum women by raising awareness and giving back through hands-on community projects. Each meeting includes a project that helps new mothers or brings kindness to our local community.</p>
-    <p><em>“Because every mother deserves care after giving care.”</em></p>
+    <p>
+      Afterglow is a student-led club dedicated to supporting postpartum mothers 
+      through care packages, awareness campaigns, and community outreach. 
+      We believe in spreading warmth, comfort, and connection to those who need it most.
+    </p>
   </section>
 
-  <section id="projects" class="projects fade">
+  <!-- Projects -->
+  <section id="projects" class="projects section">
     <h2>Our Projects</h2>
-    <p>We create postpartum care packages filled with essentials, self-care items, and handwritten messages. Our members also organize donation drives and volunteer with local women’s centers.</p>
-    <img src="placeholder-projects.jpg" alt="Photo of members assembling care baskets">
+    <div class="project-cards">
+      <div class="card">
+        <h3>Warmth Kits</h3>
+        <p>We assemble care packages with essentials for new mothers.</p>
+      </div>
+      <div class="card">
+        <h3>Awareness Events</h3>
+        <p>Hosting info sessions to educate about postpartum wellness.</p>
+      </div>
+      <div class="card">
+        <h3>Community Outreach</h3>
+        <p>Partnering with local hospitals to offer support programs.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="resources" class="resources fade">
-    <h2>Resources</h2>
-    <p>Here are a few trusted postpartum health and support resources (replace with your own):</p>
-    <ul style="text-align:left; display:inline-block;">
-      <li><a href="#">Postpartum Support International</a></li>
-      <li><a href="#">CDC: Maternal Health</a></li>
-      <li><a href="#">Local Support Centers</a></li>
-    </ul>
-    <img src="placeholder-resources.jpg" alt="Gentle image representing support">
+  <!-- Get Involved -->
+  <section id="get-involved" class="section get-involved">
+    <h2>Get Involved</h2>
+    <p>Join our mission! Volunteer, donate, or simply help spread the word.</p>
+    <a href="#" class="btn">Join the Club</a>
   </section>
 
-  <section id="contact" class="contact fade">
-    <h2>Get In Touch</h2>
-    <p>Have questions, ideas, or want to get involved?</p>
-    <p>Email us: <strong>afterglowcares@email.com</strong></p>
-    <p>Follow us on Instagram: <strong>@afterglowcares</strong></p>
-    <a href="#home" class="btn">Back to Top</a>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact / Follow Us</h2>
+    <p>Follow us on Instagram @afterglowclub</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Afterglow Cares Club | Designed with ❤️ for our community</p>
+    <p>© 2025 Afterglow Club — All rights reserved.</p>
   </footer>
-
-  <script>
-    // Fade-in effect on scroll
-    const faders = document.querySelectorAll('.fade');
-    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-    faders.forEach(fader => { appearOnScroll.observe(fader); });
-  </script>
-
 </body>
 </html>
