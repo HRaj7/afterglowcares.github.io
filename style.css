@@ -3,19 +3,23 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #fff0f6; /* pastel pink background */
     color: #333;
 }
 
 header {
-    background-color: #ff6f61;
-    color: white;
+    background-color: #ffccd9; /* soft pink */
+    color: #fff;
     padding: 20px 10px;
     text-align: center;
 }
 
+header h1 {
+    color: #ff4d6d; /* darker pink for contrast */
+}
+
 header nav a {
-    color: white;
+    color: #ff4d6d;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -29,10 +33,13 @@ section {
     padding: 40px 20px;
     max-width: 800px;
     margin: auto;
+    background-color: #ffe6f0; /* slightly lighter pink for sections */
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #ff6f61;
+    color: #ff4d6d;
 }
 
 form {
@@ -44,10 +51,12 @@ form input, form textarea, form button {
     margin-bottom: 15px;
     padding: 10px;
     font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ffb3c6;
 }
 
 form button {
-    background-color: #ff6f61;
+    background-color: #ff4d6d;
     color: white;
     border: none;
     cursor: pointer;
@@ -62,18 +71,24 @@ ul {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #ffccd9;
+    color: #ff4d6d;
     text-align: center;
     padding: 15px;
+    margin-top: 20px;
 }
 
-.social a {
-    color: #ff6f61;
+.social-icons {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a {
+    color: #ff4d6d;
+    margin: 0 10px;
     text-decoration: none;
-    margin: 0 5px;
 }
 
-.social a:hover {
-    text-decoration: underline;
+.social-icons a:hover {
+    color: #ff1a40;
 }
